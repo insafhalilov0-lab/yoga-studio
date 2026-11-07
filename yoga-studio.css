@@ -1,0 +1,365 @@
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(138, 135, 135);
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 5px 20px rgba(102, 102, 102, 0.5);
+    padding: 5px;
+    z-index: 10;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav ul {
+    display: flex;
+    gap: 40px;;
+    list-style: none;
+}
+.main-nav ul li  {
+    border: 2px solid rgb(255, 95, 95);
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+.main-nav ul li:hover {
+    background-color: rgb(252, 96, 96);
+    cursor: pointer;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.btn-header {
+    background-color: rgb(255, 73, 73);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 40px;
+}
+.btn-header:hover {
+    background-color: #fff;
+    color: black;
+     border: 2px solid rgb(255, 95, 95);
+    cursor: pointer;
+}
+.logo {
+    background-color: rgb(255, 121, 121);
+    color: #fff;
+    padding: 15px;
+    border: 7px dotted rgb(255, 0, 0);
+    border-radius: 50%;
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 40px;
+}
+.hero-content {
+    width: 40%;
+}
+.hero-image img {
+     width: 500px; /* Картинка станет шириной 500 пикселей */
+    height: auto;
+}
+.hero-content h1 {
+    color: rgb(255, 73, 73);
+    font-size: 4em;
+    text-shadow: 10px 5px 10px rgba(155, 155, 155, 0.5);
+}
+.hero {
+    border: 2px solid rgb(255, 55, 55);
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.highlight-text {
+    color: red;
+}
+.btn-main {
+    display: block;
+    background-color: rgb(255, 73, 73);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none; 
+}
+.btn-main:hover {
+     background-color: #fff;
+    color: black;
+     border: 2px solid rgb(255, 95, 95);
+    cursor: pointer;
+}
+.section-subtitle {
+    border: rgb(255, 73, 73);
+}
+
+.schedule-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid rgb(255, 73 ,73);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgb(231, 231, 231);
+}
+.schedule-table th {
+    background-color: rgb(255, 130, 130);
+    padding: 15px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.schedule-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(255, 73 ,73);
+}
+.schedule-table tr:hover {
+    background-color: #ffdbdb;
+}
+.schedule-section h2  {
+    font-size: 4em;
+    padding: 40px 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: rgb(255, 73 ,73);
+    text-shadow: 10px 5px 10px rgb(255, 169, 169);
+}
+.schedule-section p {
+    font-size: 2em;
+    text-align: center;
+
+}
+/* Контейнер для карточек */
+.trainers-grid {
+    display: flex;
+    justify-content: space-evenly; /* Равномерно распределяем карточки */
+    gap: 30px; /* Расстояние между ними */
+    max-width: 1100px; /* Ограничиваем ширину, чтобы не растягивались на весь экран */
+    margin: 40px auto; /* Центрируем на странице */
+    padding: 0 20px;
+}
+
+/* Сама карточка */
+.trainer-card {
+    border: 1px solid rgb(255, 73 ,73);
+    width: 30%; /* Ширина карточки */
+    background-color: #fff; /* Белый фон */
+    border-radius: 20px; /* Мягкое скругление углов */
+    padding: 30px 20px; /* Внутренние отступы (сверху/снизу больше, чтобы дышало) */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Мягкая тень для объема */
+    border: none; /* УБИРАЕМ жесткую рамку, она тут не нужна */
+    display: flex;
+    flex-direction: column; /* Выстраиваем контент внутри карточки в столбик */
+    align-items: center; /* Центрируем всё по горизонтали */
+    text-align: center; /* Текст тоже по центру */
+    transition: transform 0.3s ease; /* Плавная анимация при наведении */
+}
+
+/* Эффект при наведении на карточку */
+.trainer-card:hover {
+    transform: translateY(-10px); /* Карточка чуть-чуть приподнимается вверх */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Тень становится больше */
+    background-color: rgb(255, 234, 234);
+}
+
+/* Фотография тренера */
+.trainer-card img {
+    width: 150px; /* Размер фото */
+    height: 150px;
+    object-fit: cover; /* Обрезаем лишнее, чтобы лицо не плющилось */
+    border-radius: 50%; /* Делаем фото круглым */
+    margin-bottom: 20px; /* Отступ снизу до имени */
+    border: 4px solid #fff; /* Белая рамка вокруг фото */
+    box-shadow: 0 5px 15px rgba(255, 73, 73, 0.3); /* Тень вокруг фото в цвет твоего сайта */
+}
+
+/* Имя тренера (h3) */
+.trainer-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Направление (например, Хатха-йога) */
+.trainer-card p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Описание тренера */
+.trainer-card .trainer-desc {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #888;
+}
+.trainers-section h2 {
+    font-size: 4em;
+    padding: 40px 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: rgb(255, 73 ,73);
+    text-shadow: 10px 5px 10px rgb(255, 169, 169);
+}
+.prices-grid {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    margin: 40px auto;
+    text-align: center;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+.price-card {
+    width: 30%;
+    background-color: #ffefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgb(221, 221, 221);
+    border-radius: 40px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+}
+.price-card:hover {
+    transform: translateY(-10px);
+    background-color: rgb(255, 226, 226);
+}
+.btn-price {
+    background-color: rgb(255, 113, 113);
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    width: 90%;
+    
+}
+.btn-price:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgb(255, 73 ,73);
+}
+.badge {
+    margin-top: -30px;
+    background-color: rgb(255, 87, 87);
+    padding: 10px;
+    border-radius: 0px 0px 15px 15px;
+    color: #FFF;
+}
+.price-card ul li {
+     margin-bottom: 10px;
+    color: #666;
+}
+.price-value {
+    padding: 5px;
+    border-bottom: 2px solid rgb(252, 96, 96);
+}
+.price-card h3 {
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid rgb(252, 96, 96);
+    line-height: 70px;
+}
+.prices-section h2 {
+    font-size: 4em;
+    padding: 40px 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: rgb(255, 73 ,73);
+    text-shadow: 10px 5px 10px rgb(255, 169, 169);
+}
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 20px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+    align-self: flex-start;
+    width: 40%;
+    padding: 20px;
+}
+.contact-info h2 {
+    font-size: 3.5em;
+    color: rgb(255, 73 ,73);
+    text-shadow: 10px 5px 10px rgb(255, 217, 217);
+}
+.contact-info p {
+    font-size: 1.3em;
+}
+.contact-info address ul li {
+    padding: 5px;
+}
+.contact-info address ul {
+    border: 2px solid rgb(255, 87, 87);
+    width: 100%;
+    border-radius: 30px;
+}
+.form-container {
+    width: 30%;
+    box-shadow: 0px 10px 20px rgb(255, 216, 216);
+    border-radius: 40px;
+    padding: 20px;
+}
+.yoga-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    
+}
+.yoga-form input, textarea, select, option {
+    padding: 10px;
+    border: 2px solid rgb(255, 73 ,73);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.btn-submit {
+    padding: 10px;
+    background-color: rgb(253, 96, 96);
+    color: #fff;
+    border-radius: 20px;
+}
+.btn-submit:hover {
+    background-color: #ffefef;
+    border: 2px solid rgb(253, 96, 96);
+    color: rgb(0, 0, 0);
+}
+.policy-text { 
+    font-size: 0.7em;
+    padding: 0px 10px;
+}
+
+
+
+
