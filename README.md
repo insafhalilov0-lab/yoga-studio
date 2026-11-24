@@ -16,5 +16,5 @@
 - Форма обратной связи с выпадающим списком и валидацией
 
 ## Как посмотреть
-- [Открыть yoga-studio.html](https://github.com/insafhalilov0-lab/yoga-studio/blob/main/yoga-studio.html)
-- [Открыть yoga-studio.css](https://github.com/insafhalilov0-lab/yoga-studio/blob/main/yoga-studio.css)
+- [Открыть index.html](https://github.com/insafhalilov0-lab/yoga-studio/blob/main/index.html)
+- [Открыть style.css](https://github.com/insafhalilov0-lab/yoga-studio/blob/main/style.css)
